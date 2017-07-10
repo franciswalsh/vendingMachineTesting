@@ -1,0 +1,26 @@
+{
+  "name": "vendingmachinetesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciswalsh/vendingMachineTesting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franciswalsh/vendingMachineTesting/issues"
+  },
+  "homepage": "https://github.com/franciswalsh/vendingMachineTesting#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.11.1",
+    "supertest": "^3.0.0"
+  }
+}
