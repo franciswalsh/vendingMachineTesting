@@ -1,6 +1,6 @@
 const express = require("express");
-const itemsAvailable = require('./models/itemsAvailable');
-const purchases = require('./models/purchases')
+const Item = require('./models/item.js');
+const Purchase = require('./models/purchase.js')
 const mongoose = require("mongoose");
 const customerRouter = require('./customerRouter.js')
 const vendorRouter = require('./vendorRouter.js')
@@ -11,7 +11,7 @@ app.use('/api/customer/', customerRouter);
 app.use('/api/vendor', vendorRouter);
 
 app.get('/', function(req, res){
-  res.redirect('/api/customer/');
+  res.send('main page');
 });
 
 

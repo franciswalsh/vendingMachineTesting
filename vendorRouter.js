@@ -1,19 +1,22 @@
 const express = require('express');
 const vendorRouter = express.Router();
-const itemsAvailable = require('./models/itemsAvailable');
-const purchases = require('./models/purchases')
+const Item = require('./models/item.js');
+const Purchase = require('./models/purchase.js')
 
 vendorRouter.get('/', function(req, res){
   res.send("this is the vendor api");
 });
 
-vendorRouter.get('/items/', function(req, res){
-  res.send("should get a list of items");
+vendorRouter.post('/items/', function(req, res){
+  //add a new item not previously existin in the machine
 });
-vendorRouter.get('/purchases', function(req, res){
+vendorRouter.put('/items/:itemId', function(req, res){
+  //update item quantity description and cost
+})
+vendorRouter.get('/purchases/', function(req, res){
   res.send("vendor purchases api");
 });
-vendorRouter.get('/money', function(req, res){
+vendorRouter.get('/money/', function(req, res){
   res.send("vendor money api");
 })
 
