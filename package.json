@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/franciswalsh/vendingMachineTesting#readme",
   "dependencies": {
+    "assert": "^1.4.1",
     "bluebird": "^3.5.0",
     "express": "^4.15.3",
     "mocha": "^3.4.2",
